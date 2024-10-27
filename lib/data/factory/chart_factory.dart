@@ -71,9 +71,9 @@ class ChartFactory {
     final double highest = items.highestBalanceOrSpent;
     final double maxY = highest.ceilTo(_getCeil(highest));
     final double from =
-        ((items.firstOrNull?.date)?.millisecondsSinceEpoch)?.toDouble() ?? 0.0;
+        items.firstOrNull?.date?.millisecondsSinceEpoch?.toDouble() ?? 0.0;
     final double to =
-        ((items.lastOrNull?.date)?.millisecondsSinceEpoch)?.toDouble() ?? 0.0;
+        items.lastOrNull?.date?.millisecondsSinceEpoch?.toDouble() ?? 0.0;
     final double frequency = (to - from) / (model.history.length - 1);
     return [
       ChartAxisLayer(
@@ -153,9 +153,9 @@ class ChartFactory {
     final double lowest =
         items.lowestValues.ceilFrom(_getCeil(items.lowestValues));
     final double from =
-        ((items.firstOrNull?.date)?.millisecondsSinceEpoch)?.toDouble() ?? 0.0;
+        items.firstOrNull?.date?.millisecondsSinceEpoch?.toDouble() ?? 0.0;
     final double to =
-        ((items.lastOrNull?.date)?.millisecondsSinceEpoch)?.toDouble() ?? 0.0;
+        items.lastOrNull?.date?.millisecondsSinceEpoch?.toDouble() ?? 0.0;
     final double frequency =
         (to - from) / (model.daysBack == DateTime.daysPerWeek ? 6.0 : 4.0);
     return [
@@ -261,7 +261,7 @@ class ChartFactory {
             color: AppColors.navy,
           ),
         ),
-      )
+      ),
     ];
   }
 
@@ -277,8 +277,8 @@ class ChartFactory {
           (e) => e.value,
         )
         .reduce(max);
-    final from = (items.firstOrNull?.date)?.millisecondsSinceEpoch ?? 0;
-    final to = (items.lastOrNull?.date)?.millisecondsSinceEpoch ?? 0;
+    final from = items.firstOrNull?.date?.millisecondsSinceEpoch ?? 0;
+    final to = items.lastOrNull?.date?.millisecondsSinceEpoch ?? 0;
     final frequency = (to - from) / (retirementPlanModel.data.length - 1);
     return [
       ChartHighlightLayer(
