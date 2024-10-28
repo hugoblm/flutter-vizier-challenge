@@ -351,16 +351,15 @@ class ChartFactory {
   }
 
   static String _getLabelAxisX(int day, DateTime dateTime) {
-    switch (day) {
-      case DateTime.daysPerWeek:
-        return dateTime.day.toString();
-      case DateTime.monthsPerYear:
-      const (case DateTime.monthsPerYear * 30:
-        return '${dateTime.day}/${dateTime.month}';)
-      default:
-        return dateTime.year.toString();
-    }
+  switch (day) {
+    case 7: // Exemple pour la fin de la semaine
+      return dateTime.day.toString();
+    case 30: // Exemple pour la fin du mois
+      return '${dateTime.day}/${dateTime.month}';
+    default:
+      return dateTime.year.toString();
   }
+}
 
   static int _getCeil(double value) {
     final String v = value.toInt().toString();
