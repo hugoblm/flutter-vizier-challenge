@@ -35,7 +35,7 @@ class OnboardingItemContent extends StatelessWidget {
   Widget _buildTitle(BuildContext context) {
     return Text(
       title,
-      style: Theme.of(context).textTheme.headline2,
+      style: Theme.of(context).textTheme.displayMedium,
       textAlign: TextAlign.center,
     );
   }
@@ -43,7 +43,7 @@ class OnboardingItemContent extends StatelessWidget {
   Widget _buildDescription(BuildContext context) {
     return Text(
       description,
-      style: Theme.of(context).textTheme.bodyText2?.copyWith(
+      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
             color: AppColors.gray200,
           ),
       textAlign: TextAlign.center,

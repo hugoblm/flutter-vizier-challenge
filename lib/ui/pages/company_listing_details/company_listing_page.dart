@@ -59,7 +59,7 @@ class CompanyListingPage extends StatelessWidget implements AutoRouteWrapper {
             ..fetchData(
               companyAsset: companyAsset,
             ),
-        )
+        ),
       ],
       child: BlocListener<ChartTabsCubit, ChartTabsState>(
         listener: (context, state) => state.mapOrNull(

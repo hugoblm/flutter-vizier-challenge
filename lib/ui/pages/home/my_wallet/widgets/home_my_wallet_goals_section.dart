@@ -17,7 +17,7 @@ class _HomeMyWalletGoalsSection extends StatelessWidget {
           title: AppLoc.of(context).homeMyWalletSummaryGoalsSectionTitle,
           onMorePressed: onMorePressed,
         ),
-        _buildGoalsList(context)
+        _buildGoalsList(context),
       ],
     );
   }

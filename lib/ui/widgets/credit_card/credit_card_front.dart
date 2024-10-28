@@ -62,7 +62,7 @@ class _CreditCardFront extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

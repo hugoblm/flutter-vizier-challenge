@@ -77,7 +77,7 @@ class AccountSummaryCell extends StatelessWidget {
       children: [
         Text(
           name,
-          style: Theme.of(context).textTheme.headline6?.copyWith(
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 color: AppColors.white,
               ),
         ),
@@ -86,10 +86,10 @@ class AccountSummaryCell extends StatelessWidget {
         ),
         Text(
           number,
-          style: Theme.of(context).textTheme.caption?.copyWith(
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: AppColors.white.withOpacity(0.6),
               ),
-        )
+        ),
       ],
     );
   }
@@ -102,7 +102,7 @@ class AccountSummaryCell extends StatelessWidget {
           CurrencyFormatterUtil.instance.format(
             value: balance,
           ),
-          style: Theme.of(context).textTheme.headline6?.copyWith(
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 color: AppColors.white,
                 height: 16.0 / 14.0,
               ),

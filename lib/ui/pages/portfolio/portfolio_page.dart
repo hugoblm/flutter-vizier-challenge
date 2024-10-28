@@ -85,7 +85,7 @@ class PortfolioPage extends StatelessWidget with AutoRouteWrapper {
           ),
           onMorePressed: () =>
               AdaptiveAlertDialogFactory.showContentUnavailable(context),
-        )
+        ),
       ],
     );
   }

@@ -54,7 +54,7 @@ class _HomeMyWalletFooterBanner extends StatelessWidget {
   Widget _buildTitle(BuildContext context) {
     return Text(
       AppLoc.of(context).homeMyWalletFooterTitle,
-      style: Theme.of(context).textTheme.headline6?.copyWith(
+      style: Theme.of(context).textTheme.titleLarge?.copyWith(
             color: AppColors.white,
           ),
     );

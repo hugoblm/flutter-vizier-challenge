@@ -1,8 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
-import 'package:vizier/data/models/company_asset/company_asset_model.dart';
-import 'package:vizier/data/models/offer/offer_model.dart';
 import 'package:vizier/ui/pages/authentication/login/authentication_login_page.dart';
 import 'package:vizier/ui/pages/bottom_navigation/bottom_navigation_page.dart';
 import 'package:vizier/ui/pages/company_listing_details/company_listing_page.dart';
@@ -10,7 +7,6 @@ import 'package:vizier/ui/pages/credit_card/form/credit_card_form_page.dart';
 import 'package:vizier/ui/pages/credit_card/overview/credit_card_overview.dart';
 import 'package:vizier/ui/pages/finances/finances_page.dart';
 import 'package:vizier/ui/pages/financial_breakdown/financial_breakdown_page.dart';
-import 'package:vizier/ui/pages/financial_breakdown/financial_breakdown_page_arguments.dart';
 import 'package:vizier/ui/pages/home/home_page.dart';
 import 'package:vizier/ui/pages/offers/details/offer_details_page.dart';
 import 'package:vizier/ui/pages/offers/offers_page.dart';

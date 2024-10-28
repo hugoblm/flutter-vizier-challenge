@@ -63,7 +63,7 @@ class HomeTabBar extends StatelessWidget {
       ),
       child: Text(
         item.title(context),
-        style: Theme.of(context).textTheme.headline6?.copyWith(
+        style: Theme.of(context).textTheme.titleLarge?.copyWith(
               color: AppColors.primary100,
             ),
       ),

@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:vizier/config/router/app_router.dart';
 import 'package:vizier/l10n/app_loc.dart';
 
 enum BottomNavigationItem { home, finances, portfolio, offers }

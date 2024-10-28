@@ -76,7 +76,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           context.router.replaceNamed(AuthenticationLoginPage.route),
       child: Text(
         AppLoc.of(context).oboardingSkipButton,
-        style: Theme.of(context).textTheme.headline6?.copyWith(
+        style: Theme.of(context).textTheme.titleLarge?.copyWith(
               color: AppColors.primary100,
             ),
       ),

@@ -70,7 +70,7 @@ class _HomeMyWalletSummary extends StatelessWidget {
                         value: walletBalance!,
                       )
                     : '',
-                style: Theme.of(context).textTheme.headline1?.copyWith(
+                style: Theme.of(context).textTheme.displayLarge?.copyWith(
                       color: AppColors.white,
                     ),
               ),
@@ -79,11 +79,11 @@ class _HomeMyWalletSummary extends StatelessWidget {
                 style: AppTextStyles.caption2().copyWith(
                   color: AppColors.white.withOpacity(0.6),
                 ),
-              )
+              ),
             ],
           ),
         ),
-        if (onMorePressed != null) _buildMoreButton()
+        if (onMorePressed != null) _buildMoreButton(),
       ],
     );
   }

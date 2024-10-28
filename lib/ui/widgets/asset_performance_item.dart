@@ -46,7 +46,7 @@ class AssetPerformanceItem extends StatelessWidget {
       children: [
         Text(
           title ?? '',
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         PerformancePercentageBox(
           value: assetPercentageChange ?? 0.0,

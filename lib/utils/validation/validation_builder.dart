@@ -50,7 +50,7 @@ class ValidationBuilder {
       } else if (items.length == 2 &&
           [
             (int.tryParse('20${items[1]}') ?? nowYear) < nowYear,
-            ((int.tryParse('20${items[1]}') ?? nowYear) == nowYear && (int.tryParse(items[0]) ?? 12) < nowMonth)
+            ((int.tryParse('20${items[1]}') ?? nowYear) == nowYear && (int.tryParse(items[0]) ?? 12) < nowMonth),
           ].any((element) => element)) {
         return AppLoc.of(context).validationRuleIsValidCardExpiry;
       }
