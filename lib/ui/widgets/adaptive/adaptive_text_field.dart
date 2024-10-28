@@ -45,19 +45,24 @@ class _AdaptiveTextFieldState extends State<AdaptiveTextField> {
 
   bool get isValid => widget.validator?.call(controller.text, context) == null;
 
-  bool get showError {
-    if (forcedValidation && !isValid) {
-      return true;
-    }
-    switch (widget.autovalidateMode) {
-      case AutovalidateMode.always:
-        return !isValid;
-      case AutovalidateMode.onUserInteraction:
-        return !isValid && hadFirstFocus;
-      case AutovalidateMode.disabled:
-        return false;
-    }
+bool get showError {
+  if (forcedValidation && !isValid) {
+    return true;
   }
+  switch (widget.autovalidateMode) {
+    case AutovalidateMode.always:
+      return !isValid;
+    case AutovalidateMode.onUserInteraction:
+      return !isValid && hadFirstFocus;
+    case AutovalidateMode.disabled:
+      return false;
+    case AutovalidateMode.onUnfocus:
+      // TODO: Handle this case.
+      break;
+  }
+  // Ajouter une déclaration de retour par défaut au cas où le mode d'autovalidation ne correspondrait à aucun des cas.
+  return false; // Valeur par défaut, peut être ajustée en fonction de votre logique.
+}
 
   @override
   void initState() {

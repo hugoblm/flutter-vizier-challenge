@@ -40,7 +40,7 @@ class _FinancesStatusSummary extends StatelessWidget {
       CurrencyFormatterUtil.instance.format(
         value: spent,
       ),
-      style: Theme.of(context).textTheme.headline4,
+      style: Theme.of(context).textTheme.headlineMedium,
     );
   }
 

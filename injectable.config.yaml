@@ -1,0 +1,4 @@
+generate_for_dir:
+  - lib
+register_module:
+  include_empty: false

@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:vizier/config/router/app_router.dart';
 import 'package:vizier/config/styles/colors/app_colors.dart';
 import 'package:vizier/config/styles/decorations/app_decorations.dart';
 import 'package:vizier/config/styles/dimensions/app_dimensions.dart';

@@ -1,5 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
+import 'package:vizier/config/injector/di.config.dart';
 
 @InjectableInit()
 class DI {

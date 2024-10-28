@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:vizier/config/injector/di.dart';
+import 'package:vizier/config/router/app_router.dart';
 import 'package:vizier/config/styles/colors/app_colors.dart';
 import 'package:vizier/config/styles/decorations/app_decorations.dart';
 import 'package:vizier/config/styles/dimensions/app_dimensions.dart';

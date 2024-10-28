@@ -22,7 +22,7 @@ class _FinancesHeader extends StatelessWidget {
       CurrencyFormatterUtil.instance.format(
         value: cashBalance,
       ),
-      style: Theme.of(context).textTheme.headline1,
+      style: Theme.of(context).textTheme.headlineLarge,
     );
   }
 

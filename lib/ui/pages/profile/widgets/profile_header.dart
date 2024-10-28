@@ -47,7 +47,7 @@ class _ProfileHeader extends StatelessWidget {
   }) {
     return Text(
       fullName,
-      style: Theme.of(context).textTheme.headline5,
+      style: Theme.of(context).textTheme.headlineMedium,
       textAlign: TextAlign.center,
     );
   }
@@ -58,7 +58,7 @@ class _ProfileHeader extends StatelessWidget {
   }) {
     return Text(
       email,
-      style: Theme.of(context).textTheme.bodyText2?.copyWith(
+      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
             color: AppColors.navy.withOpacity(0.5),
           ),
       textAlign: TextAlign.center,

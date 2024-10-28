@@ -25,7 +25,7 @@ class _ProfileAppBar extends AdaptiveAppBar {
       onPressed: onPressed,
       child: Text(
         AppLoc.of(context).profilePageLogoutButton,
-        style: Theme.of(context).textTheme.headline6?.copyWith(
+        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: AppColors.primary100,
             ),
       ),
