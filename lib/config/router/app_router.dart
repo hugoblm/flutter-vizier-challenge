@@ -7,12 +7,17 @@ import 'package:vizier/ui/pages/credit_card/form/credit_card_form_page.dart';
 import 'package:vizier/ui/pages/credit_card/overview/credit_card_overview.dart';
 import 'package:vizier/ui/pages/finances/finances_page.dart';
 import 'package:vizier/ui/pages/financial_breakdown/financial_breakdown_page.dart';
+import 'package:vizier/ui/pages/financial_breakdown/financial_breakdown_page_arguments.dart';
 import 'package:vizier/ui/pages/home/home_page.dart';
 import 'package:vizier/ui/pages/offers/details/offer_details_page.dart';
 import 'package:vizier/ui/pages/offers/offers_page.dart';
 import 'package:vizier/ui/pages/onboarding/onboarding_page.dart';
 import 'package:vizier/ui/pages/portfolio/portfolio_page.dart';
 import 'package:vizier/ui/pages/profile/profile_page.dart';
+import 'package:vizier/config/router/app_router.dart';
+import 'package:flutter/material.dart';
+import 'package:vizier/data/models/company_asset/company_asset_model.dart';
+import 'package:vizier/data/models/offer/offer_model.dart';
 
 part 'app_router.gr.dart';
 
